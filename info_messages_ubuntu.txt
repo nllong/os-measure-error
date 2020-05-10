@@ -1,0 +1,22 @@
+0.0 value for aspect ratio will be replaced with smart default for SecondarySchool of 2.1.
+0.0 value for minimum perimeter multiplier will be replaced with smart default for SecondarySchool of 1.568.
+0.0 value for floor height will be replaced with smart default for SecondarySchool of 13.0.
+0.0 value for window to wall ratio will be replaced with smart default for SecondarySchool of 0.33.
+Creating Space Types for SecondarySchool.
+Combining Classroom and Corridor into a group representing a double loaded corridor
+You selected a perimeter multiplier greater than 1.0 for a supported bar division method. This will result in two detached rectangular buildings if secondary bar meets minimum size requirements.
+Minimum rectangle is 417 ft x 199 ft with an area of 82,773 ft^2. Perimeter is 1,231 ft.
+Target dual bar perimeter is 1,930 ft.
+Stretched  742 ft x 112 ft rectangle has an area of 82,773 ft^2. When split in two the perimeter will be 1,930 ft
+For stretched split bar, to match target ns/ew aspect ratio 542 ft of bar should be horizontal, with 200 ft turned 90 degrees. Combined area is 82,773 ft^2. Combined perimeter is 1,930 ft
+Making bar with length of 542 ft and width of 112 ft
+Intersecting and matching surfaces in model, this will create additional geometry.
+Created bar envelope with floor area of 120,978 ft^2. Total building area is 120,978 ft^2.
+Ground exposed floor or Roof area is larger than footprint, likely inter-floor surface matching and intersection error, altering impacted surfaces boundary condition to be adiabatic.
+Making bar with length of 112 ft and width of 200 ft
+Intersecting and matching surfaces in model, this will create additional geometry.
+Created bar envelope with floor area of 43,394 ft^2. Total building area is 164,372 ft^2.
+Ground exposed floor or Roof area is larger than footprint, likely inter-floor surface matching and intersection error, altering impacted surfaces boundary condition to be adiabatic.
+Making bar with length of 309 ft and width of 147 ft
+Intersecting and matching surfaces in model, this will create additional geometry.
+Created bar envelope with floor area of 45,341 ft^2. Total building area is 209,713 ft^2.

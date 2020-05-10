@@ -1,0 +1,133 @@
+[
+{
+   "name" : "bldg_type_a",
+   "value" : "SecondarySchool"
+},{
+   "name" : "bldg_type_a_num_units",
+   "value" : 1
+},{
+   "name" : "bldg_type_b",
+   "value" : "SmallOffice"
+},{
+   "name" : "bldg_type_b_fract_bldg_area",
+   "value" : 0.0
+},{
+   "name" : "bldg_type_b_num_units",
+   "value" : 1
+},{
+   "name" : "bldg_type_c",
+   "value" : "SmallOffice"
+},{
+   "name" : "bldg_type_c_fract_bldg_area",
+   "value" : 0.0
+},{
+   "name" : "bldg_type_c_num_units",
+   "value" : 1
+},{
+   "name" : "bldg_type_d",
+   "value" : "SmallOffice"
+},{
+   "name" : "bldg_type_d_fract_bldg_area",
+   "value" : 0.0
+},{
+   "name" : "bldg_type_d_num_units",
+   "value" : 1
+},{
+   "name" : "total_bldg_floor_area",
+   "value" : 210887.0
+},{
+   "name" : "single_floor_area",
+   "value" : 0.0
+},{
+   "name" : "floor_height",
+   "value" : 0.0
+},{
+   "name" : "custom_height_bar",
+   "value" : true
+},{
+   "name" : "num_stories_above_grade",
+   "value" : 2.0
+},{
+   "name" : "num_stories_below_grade",
+   "value" : 0
+},{
+   "name" : "building_rotation",
+   "value" : 0.0
+},{
+   "name" : "template",
+   "value" : "90.1-2004"
+},{
+   "name" : "ns_to_ew_ratio",
+   "value" : 0.0
+},{
+   "name" : "perim_mult",
+   "value" : 0.0
+},{
+   "name" : "bar_sep_dist_mult",
+   "value" : 3.0
+},{
+   "name" : "wwr",
+   "value" : 0.0
+},{
+   "name" : "party_wall_fraction",
+   "value" : 0.0
+},{
+   "name" : "party_wall_stories_north",
+   "value" : 0
+},{
+   "name" : "party_wall_stories_south",
+   "value" : 0
+},{
+   "name" : "party_wall_stories_east",
+   "value" : 0
+},{
+   "name" : "party_wall_stories_west",
+   "value" : 0
+},{
+   "name" : "bottom_story_ground_exposed_floor",
+   "value" : true
+},{
+   "name" : "top_story_exterior_exposed_roof",
+   "value" : true
+},{
+   "name" : "story_multiplier",
+   "value" : "Basements Ground Mid Top"
+},{
+   "name" : "make_mid_story_surfaces_adiabatic",
+   "value" : false
+},{
+   "name" : "bar_division_method",
+   "value" : "Multiple Space Types - Individual Stories Sliced"
+},{
+   "name" : "double_loaded_corridor",
+   "value" : "Primary Space Type"
+},{
+   "name" : "space_type_sort_logic",
+   "value" : "Building Type > Size"
+},{
+   "name" : "use_upstream_args",
+   "value" : true
+},{
+   "name" : "climate_zone",
+   "value" : "Lookup From Stat File"
+},{
+   "name" : "wall_area_ip",
+   "units" : "ft^2",
+   "value" : 73868.219388909347
+},{
+   "name" : "ns_wall_area_ip",
+   "units" : "ft^2",
+   "value" : 50039.761521519191
+},{
+   "name" : "ew_wall_area_ip",
+   "units" : "ft^2",
+   "value" : 23828.457867390163
+},{
+   "name" : "floor_area_to_perim_ratio",
+   "value" : 11.312289175950978
+},{
+   "name" : "bar_width",
+   "units" : "ft",
+   "value" : 111.56995781588688
+}
+]
