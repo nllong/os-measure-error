@@ -370,11 +370,11 @@ class CreateBarFromBuildingTypeRatios < OpenStudio::Measure::ModelMeasure
     # end
     # puts "done again"
 
-    # temporary bypass of openstudio surface intersection to avoid problematic behavior
+    # temporary bypass of openstudio surface intersect  ion to avoid problematic behavior
     # can be removed after fixes to core OS geometry methods are made.
     orig_val = user_arguments['make_mid_story_surfaces_adiabatic']
-    if ! orig_val == true
-      user_arguments['make_mid_story_surfaces_adiabatic'] = true
+    if ! orig_val.valueAsBool == true
+      user_arguments['make_mid_story_surfaces_adiabatic'].setValue(true)
       runner.registerInfo("To assure stability of the maesure altering the value of make_mid_story_surfaces_adiabatic argument to be true. This will avoid using surface intersection and will result in adiabatic vs surface matched floor/ceiling connections.")
     end
 

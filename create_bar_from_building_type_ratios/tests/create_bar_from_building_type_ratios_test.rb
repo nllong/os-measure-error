@@ -520,6 +520,7 @@ class CreateBarFromBuildingTypeRatios_Test < Minitest::Test
     args['perim_mult'] = 0
     args['custom_height_bar'] = true
     args['bar_sep_dist_mult'] = 3
+    args['make_mid_story_surfaces_adiabatic'] = false
 
     apply_measure_to_model(__method__.to_s.gsub('test_', ''), args, nil, nil, nil)
   end
