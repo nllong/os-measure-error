@@ -299,7 +299,7 @@ class CreateBarFromBuildingTypeRatios < OpenStudio::Measure::ModelMeasure
     make_mid_story_surfaces_adiabatic = OpenStudio::Measure::OSArgument.makeBoolArgument('make_mid_story_surfaces_adiabatic', true)
     make_mid_story_surfaces_adiabatic.setDisplayName('Make Mid Story Floor Surfaces Adiabatic')
     make_mid_story_surfaces_adiabatic.setDescription('If set to true, this will skip surface intersection and make mid story floors and celings adiabatic, not just at multiplied gaps.')
-    make_mid_story_surfaces_adiabatic.setDefaultValue(false)
+    make_mid_story_surfaces_adiabatic.setDefaultValue(true)
     args << make_mid_story_surfaces_adiabatic
 
     # make an argument for bar sub-division approach
@@ -359,16 +359,16 @@ class CreateBarFromBuildingTypeRatios < OpenStudio::Measure::ModelMeasure
   def run(model, runner, user_arguments)
     super(model, runner, user_arguments)
 
-    # method run from os_lib_model_generation.rb
-    puts "here i am again"
-    require 'openstudio-extension'
-    puts OpenStudio::Extension::VERSION
+    # require 'openstudio-extension'
+    # puts OpenStudio::Extension::VERSION
 
-    # user_arguments.each do |arg, value|
-    #   puts arg
-    #   puts value.valueAsString
-    # end
-    # puts "done again"
+    # temporary bypass of openstudio surface intersection to avoid problematic behavior
+    # can be removed after fixes to core OS geometry methods are made. # aka, force argument false
+    orig_val = user_arguments['make_mid_story_surfaces_adiabatic']
+    if orig_val.hasValue
+      runner.registerInfo("To assure stability of the measure altering the value of make_mid_story_surfaces_adiabatic argument to be true. This will avoid using surface intersection and will result in adiabatic vs surface matched floor/ceiling connections.")
+    end
+    user_arguments['make_mid_story_surfaces_adiabatic'].setValue(true)
 
     result = bar_from_building_type_ratios(model, runner, user_arguments)
 
